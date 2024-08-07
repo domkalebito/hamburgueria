@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- ANIMAÇÕES -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  
+  <!-- ANIMAÇÕES DOS ALERTAS 01:20:00 Aula2 -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css" />
+
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet" />
+
+  <!-- Biblioteca de ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="./styles/output.css" />
+
+  <!-- ANIMAÇÕES -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <title>Dev Burguer - A melhor hamburgueria dev</title>
+</head>
+<body>
+ 
+  <!-- HEADER -->
+  <header class="bg-home bg-center bg-cover w-full h-[380px] bg-zinc-900">
+    <div class="flex flex-col justify-center items-center w-full h-full">
+      <img
+        data-aos="flip-up" data-aos-delay="200" data-aos-duration="1500"
+        src="./assets/hamb-1.png"
+        alt=""
+        class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200"
+      />
+      <h1 class="text-3xl mt-4 mb-4 font-bold text-white"
+          data-aos="fade-up" data-aos-delay="500">
+        Dev Burguer
+      </h1>
+
+      <span class="text-white font-medium" data-aos="fade-up" data-aos-delay="800">Rua Dev 10, Campo Grande - MS</span>
+
+      <div id="date-span" class="bg-green-500 text-s px-4 py-1 rounded-lg mt-4 hover:animate-wiggle cursor-pointer" 
+           data-aos="flip-up" data-aos-delay="1000" data-aos-duration="1000">
+        <span class="text-white font-medium">Seg à Dom - 18h às 22h</span>
+      </div>
+
+    </div>
+  </header>
+  <!-- FIM HEADER -->
+
+
+  <div class="text-[28px] font-bold text-center my-8
+              tablet:text-3xl
+              laptop:text-4xl">
+    <h2
+      data-aos="zoom-in" data-aos-delay="900" data-aos-duration="1000">
+      Conheça nosso menu
+    </h2>
+  </div>
+
+  
+  <!-- MENU -->
+  <div id="menu">
+    
+    <!-- GRID DE PRODUTOS -->
+    <main class="grid grid-cols-1 gap-7
+      max-w-7xl mx-auto mb-16 px-2
+      md:grid-cols-2 md:gap-10
+      3xl:grid-cols-3">
+    
+      <!-- PRODUTO ITEM -->
+      <div class="flex items-center justify-center gap-2"
+        data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+        <img
+          src="assets/hamb-1.png"
+          alt="Hamburguer smash"
+          class="w-28 rounded-lg hover:scale-110 hover:rotate-2 duration-200"
+        />
+        <div>
+          <p class="font-bold">Hamburger small</p>
+          <p class="text-sm">Pão levinho de fermentação natural de trigo, burger 160g, queijo prato e maionese da casa.</p>
+          
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 14.90</p>
+            <button type="button"
+              data-name="Hamburger small"
+              data-price="14.90"
+              class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-gray-800 hover:shadow-btnCarItem duration-200"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+      
+      <!-- PRODUTO ITEM -->
+      <div class="flex items-center justify-center gap-2"
+        data-aos="fade-up" data-aos-duration="500" data-aos-anchor-placement="center-bottom">
+        <img
+          src="assets/hamb-2.png"
+          alt="Hamburguer smash"
+          class="w-28 rounded-lg hover:scale-110 hover:rotate-2 duration-200"
+        />
+        <div>
+          <p class="font-bold">Hamburger duplo</p>
+          <p class="text-sm">Pão levinho de fermentação natural de trigo, burger 160g, queijo prato e maionese da casa.</p>
+          
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 26.90</p>
+            <button type="button"
+              data-name="Hamburger duplo"
+              data-price="26.90"
+              class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-gray-800 hover:shadow-btnCarItem duration-200"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+  
+      <!-- PRODUTO ITEM -->
+      <div class="flex items-center justify-center gap-2"
+        data-aos="fade-up" data-aos-duration="700" data-aos-anchor-placement="center-bottom">
+        <img
+          src="assets/hamb-3.png"
+          alt="Hamburguer smash"
+          class="w-28 rounded-lg hover:scale-110 hover:rotate-2 duration-200"
+        />
+        <div>
+          <p class="font-bold">Hamburger salad</p>
+          <p class="text-sm">Pão levinho de fermentação natural de trigo, burger 160g, queijo prato e maionese da casa.</p>
+            
+            <div class="flex items-center justify-between gap-2 mt-3">
+              <p class="font-bold text-lg">R$ 22.90</p>
+              <button type="button"
+                data-name="Hamburger salad"
+                data-price="22.90"
+                class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-gray-800 hover:shadow-btnCarItem duration-200"
+              >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+      <!-- PRODUTO ITEM -->
+      <div class="flex items-center justify-center gap-2"
+        data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+        <img
+          src="assets/hamb-4.png"
+          alt="Hamburguer smash"
+          class="w-28 rounded-lg hover:scale-110 hover:rotate-2 duration-200"
+        />
+        <div>
+          <p class="font-bold">Hamburger da casa</p>
+          <p class="text-sm">Pão levinho de fermentação natural de trigo, burger 160g, queijo prato e maionese da casa.</p>
+          
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 29.90</p>
+            <button type="button"
+              data-name="Hamburger da casa"
+              data-price="29.90"
+              class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-gray-800 hover:shadow-btnCarItem duration-200"
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM PRODUTO ITEM -->
+
+    </main> <!-- FIM GRID DE PRODUTOS -->
+
+
+
+    <div class="text-[28px] font-bold text-center my-8
+                tablet:text-3xl
+                laptop:text-4xl">
+      <h2 class="font-bold text-3xl text-center"
+          data-aos="zoom-in" data-aos-delay="1000" data-aos-duration="500">
+        Bebidas
+      </h2>
+    </div>
+
+
+
+    <!-- GRID DE BEBIDAS -->
+    <div class="grid grid-cols-1 gap-7
+      max-w-7xl mx-auto mb-40 px-2
+      md:grid-cols-2 md:gap-10
+      3xl:grid-cols-3">
+
+      <!-- BEBIDA ITEM -->
+      <div class="flex items-center justify-center gap-2 w-full"
+        data-aos="fade-up" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+        <img
+          src="assets/refri-1.png"
+          alt="Coca lata"
+          class="w-28 rounded-lg hover:scale-110 hover:rotate-2 duration-200"
+        />
+        <div class="w-full">
+          <p class="font-bold">Coca lata</p>
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 6.00</p>
+            <button type="button"
+              data-name="Coca lata"
+              data-price="6.00"
+              class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-gray-800 hover:shadow-btnCarItem duration-200""
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM BEBIDA ITEM -->
+
+      <!-- BEBIDA ITEM -->
+      <div class="flex items-center justify-center gap-2 w-full"
+        data-aos="fade-up" data-aos-duration="1300" data-aos-anchor-placement="center-bottom">
+        <img
+          src="assets/refri-2.png"
+          alt="Guarana lata"
+          class="w-28 rounded-lg hover:scale-110 hover:rotate-2 duration-200"
+        />
+        <div class="w-full">
+          <p class="font-bold">Guarana lata</p>
+          <div class="flex items-center justify-between gap-2 mt-3">
+            <p class="font-bold text-lg">R$ 4.00</p>
+            <button type="button"
+              data-name="Guarana lata"
+              data-price="4.00"
+              class="bg-gray-900 px-5 rounded add-to-cart-btn hover:bg-gray-800 hover:shadow-btnCarItem duration-200""
+            >
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- FIM BEBIDA ITEM -->
+
+    </div>
+    <!-- FIM GRID DE BEBIDAS -->
+
+  </div>
+  <!-- FIM MENU -->
+
+
+
+
+  <!-- MODAL 48:00 -->
+  <div id="cart-modal" class="fixed w-full h-full overflow-y-hidden bg-black/60 top-0 left-0 z-[99]
+    hidden items-center justify-center">
+    <div class="bg-slate-50 p-5 rounded-lg min-w-[90%] md:min-w-[600px]">
+      <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho</h2>
+
+      <div id="cart-items" class="flex flex-col justify-between mb-2 max-h-96 overflow-y-scroll">
+        <!-- ADICIONA <div></div> PELO JAVASCRIPT --> INSERT BY JAVASCRIPT
+      </div>
+
+      <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
+
+      <p class="font-bold mt-3">Endereço de entregra</p>
+      <input
+        type="text"
+        placeholder="Digite seu endereço"
+        id="address"
+        class="w-full border-x-4 rounded-lg py-2 px-1 mb-2 outline-none"
+      />
+
+      <p id="address-warn" class="text-red-500 pb-2 hidden">Digite seu endereço completo</p>
+
+      <div class="flex w-full gap-5">
+        <button id="close-modal-btn" class="flex-1 bg-slate-200 shadow-btnCarFechar text-stone-700 font-bold rounded-xl py-1 bg-opacity-50 px-3 hover:bg-opacity-100 duration-200">Fechar</button>
+        <button id="checkout-btn" class="flex-1 bg-green-600 shadow-btnCarFPedido text-white font-bold rounded-xl py-1 px-3 bg-opacity-90 hover:bg-green-500 hover:bg-opacity-100 duration-200">Finalizar pedido</button>
+      </div>
+
+    </div>
+  </div>
+  <!-- FIM MODAL 48:00 -->
+
+
+
+
+  <!-- FOOTER -->
+  <footer class="flex items-center justify-center bg-red-600 opacity-95 w-full py-2 mt-120 fixed bottom-0 z-40 cursor-pointer
+    border-none hover:shadow-btnCarFooter duration-300"
+    data-aos="fade-up" data-aos-delay="2000" data-aos-duration="1000" data-aos-anchor-placement="center-bottom">
+    <button id="cart-btn" class="flex items-center justify-center gap-2 text-white w-full">
+
+      (<span id="cart-count">0</span>)
+      Veja meu carrinho
+      <i class="fa fa-cart-plus text-lg text-white"></i>
+    </button>
+  </footer>
+  <!-- FIM FOOTER -->
+
+
+  <script src="script.js"></script>
+
+
+  <!-- ANIMAÇÕES DOS ALERTAS 01:20:00 Aula2 -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+
+
+  <!-- ANIMAÇÕES -->
+  <script>
+    AOS.init(); //INITIALIZE AOS
+  </script>
+
+
+</body>
+</html>
